@@ -1,1 +1,11 @@
 /* Place CSS styles here */
+
+
+/* Responsive Images (for all other images use max width: px) */
+.img {
+    width: 100%; 
+}
+
+.dog{
+    max-width: 80px;
+}
