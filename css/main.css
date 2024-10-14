@@ -9,3 +9,77 @@
 .dog{
     max-width: 80px;
 }
+
+
+
+.logo{
+    width: auto;
+    display: flex; 
+    
+    
+    align-items: center;
+}
+
+/* header classes */
+.header-container{
+    display: flex; 
+    font-size: 32px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #461d7c;
+    color: azure;
+}
+
+.tiger-logo-header{
+    height: 110px;
+    padding-left: 25px;
+    width: auto;
+
+}
+
+.logo-title{
+    font-size: 38px;
+    padding-left: 15px;
+}
+
+.nav-header-container {
+
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdd023; /* Keep the background color */
+    max-width: 200px; /* Set a max width to control the size */
+    max-height: 100px;
+    padding: 10px; /* Add some padding for spacing */
+    border-radius: 10px; /* Add a little curve to the edges */
+    margin-left: auto; /* Centers the container on the right side */
+    margin-right: 20px; /* Adjust margin-right if necessary */
+    text-align: center; /* Ensure the links inside are centered */
+  }
+
+.nav-redirect{
+ 
+    list-style-type: none;
+    border-color: black;
+    margin: 10px;
+    color: aliceblue;
+    padding-right: 20px;
+    font-size: 22px;
+    padding: 6px;
+}
+.nav-redirect a {
+    list-style-type: none;
+    color: #461d7c; /* Navy */
+    text-decoration: none;
+    padding: 5px 10px;
+    display: inline-block;
+  }
+  
+  .nav-redirect a:hover {
+    background-color: black ; /* LSU Gold */
+    color: white;
+    border-radius: 10px;
+  }
+
+/* -------------------------- */
