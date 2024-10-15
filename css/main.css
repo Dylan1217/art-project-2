@@ -49,7 +49,7 @@
     justify-content: center;
     align-items: center;
     background-color: #fdd023; /* Keep the background color */
-    max-width: 200px; /* Set a max width to control the size */
+    max-width: 260px; /* Set a max width to control the size */
     max-height: 100px;
     padding: 10px; /* Add some padding for spacing */
     border-radius: 10px; /* Add a little curve to the edges */
@@ -83,3 +83,68 @@
   }
 
 /* -------------------------- */
+
+/* .body{
+    background-color: rgb(143, 98, 40);
+} */
+
+/* used for the home page images and text*/
+.tiger-stadium-header{
+    grid-area: header;
+    text-align: center;
+}
+
+.tiger-stadium-grid-box{
+    background-color: #d4d2cb;
+    display: grid;
+    grid-template-areas: 
+        'header header header header header header'
+        'left left middle middle right right'
+        'footer footer footer footer footer footer';
+}
+
+.home-left,
+.home-mid,
+.home-right{
+    display: flex; /* Enables Flexbox for alignment */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    padding: 10px;
+    height: 100%; /* Ensure sections stretch if needed */
+}
+
+.home-left{
+    grid-area: left;
+    background-color: #fdd023;
+}
+
+.home-mid{
+    grid-area: middle;
+    background-color: #461d7c;
+}
+
+.home-right{
+    grid-area: right;
+    background-color: #fdd023;
+}
+
+.home-left img,
+.home-mid img,
+.home-right img {
+    width: 100%; /* Make images responsive */
+    max-width: 300px; /* Control max size */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure no distortion */
+}
+
+/* -------------------------------------  */
+.questionaire-body{
+    padding-left: 20px;
+}
+
+.fav-sport-input{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px
+}
