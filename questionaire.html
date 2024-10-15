@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Responsive Layouts</title>
+  <title>Questionaire</title>
   <meta name="description" content="This site will serve as the hub for many sub responsive layouts">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -40,65 +40,72 @@
 </head>
 
 <body>
-  <div class="questionaire-body">
-    <section id="questionaire">
-        <div class="signupRedirect">
-            <h2>LSU Athletics Questionaire</h2>
-        
-            <form id="questionaireForm"> 
-              <label for="fname">First name:</label><br>
-              <input type="text" id="fname" name="fname" value="" required placeholder=""><br>  <!-- required placeholder="Enter your first name", adds description in textbox -->
-              
-              <label for="lname">Last name:</label><br>
-              <input type="text" id="lname" name="lname" value="" required placeholder=""><br><br>
-
-              <!-- make into a drop down selection box -->
-              <label for="options">Grade Level:</label><br>
-              <select id="option" name="opions" required> <!-- id used as identifer for css and name used as identifier for js -->
-                <option value="" disabled selected hidden>Select grade level</option>
-                <option value="Freshman">Freshman</option>
-                <option value="Sophmore">Sophmore</option>
-                <option value="Junior">Junior</option>
-                <option value="Senior">Senior</option>
-              </select><br><br>
-
-              
-              <!-- Type: what type of input(button) it is, id: identifier for CSS, name & value: identifiers and values sent when form is submitted-->
-              <label>Favorite Sport at LSU:</label><br>
-              <div class="fav-sport-input">
-                <label for="football">
-                  <input type="radio" id="football" name="favSport" value="Football" required>Football <!-- radio: single select checkbox-->
-                </label>
+    <div class="questionaire-grid-box">
+        <div class="questionaire-grid-left">
+          <div class="questionaire-body">
+            <section id="questionaire">
+                <div class="signupRedirect">
+                    <h2>LSU Athletics Questionaire</h2>
                 
-                <label for="baseball">
-                  <input type="radio" id="baseball" name="favSport" value="Baseball" required>Baseball
-                </label>
-                
-                <label for="gymnastics">
-                  <input type="radio" id="gymnastics" name="favSport" value="Gymnastics" required>Gymnastics
-                </label>
-                
-                <label for="basketball">
-                  <input type="radio" id="basketball" name="favSport" value="Basketball" required>Basketball
-                </label>
+                    <form id="questionaireForm"> 
+                      <label for="fname">First name:</label><br>
+                      <input type="text" id="fname" name="fname" value="" required placeholder=""><br>  <!-- required placeholder="Enter your first name", adds description in textbox -->
+                      
+                      <label for="lname">Last name:</label><br>
+                      <input type="text" id="lname" name="lname" value="" required placeholder=""><br><br>
 
-                <label for="volleyball">
-                  <input type="radio" id="volleyball" name="favSport" value="Volleyball" required>Volleyball
-                </label>
-              </div>
+                      <!-- make into a drop down selection box -->
+                      <label for="options">Grade Level:</label><br>
+                      <select id="option" name="opions" required> <!-- id used as identifer for css and name used as identifier for js -->
+                        <option value="" disabled selected hidden>Select grade level</option>
+                        <option value="Freshman">Freshman</option>
+                        <option value="Sophmore">Sophmore</option>
+                        <option value="Junior">Junior</option>
+                        <option value="Senior">Senior</option>
+                      </select><br><br>
 
-             <br><br><input type="submit" value="Submit"> <!-- submit button -->
-            </form>
-          </div> 
-    </section>  
+                      
+                      <!-- Type: what type of input(button) it is, id: identifier for CSS, name & value: identifiers and values sent when form is submitted-->
+                      <label>Favorite Sport at LSU:</label><br>
+                      <div class="fav-sport-input">
+                        <label for="football">
+                          <input type="radio" id="football" name="favSport" value="Football" required>Football <!-- radio: single select checkbox-->
+                        </label>
+                        
+                        <label for="baseball">
+                          <input type="radio" id="baseball" name="favSport" value="Baseball" required>Baseball
+                        </label>
+                        
+                        <label for="gymnastics">
+                          <input type="radio" id="gymnastics" name="favSport" value="Gymnastics" required>Gymnastics
+                        </label>
+                        
+                        <label for="basketball">
+                          <input type="radio" id="basketball" name="favSport" value="Basketball" required>Basketball
+                        </label>
 
-     <!-- New section to display the submitted form data -->
-    <section id="displayData" style="display: none;">
-      <h3>Form Information:</h3>
-      <p id="dataOutput"></p>
-    </section>
+                        <label for="volleyball">
+                          <input type="radio" id="volleyball" name="favSport" value="Volleyball" required>Volleyball
+                        </label>
+                      </div>
 
-    <script src="./js/main.js"></script>
+                    <br><br><input type="submit" value="Submit"> <!-- submit button -->
+                    </form>
+                  </div> 
+            </section>  
+
+            <!-- New section to display the submitted form data -->
+            <section id="displayData" style="display: none;">
+              <h3>Form Information:</h3>
+              <p id="dataOutput"></p>
+            </section>
+
+            <script src="./js/main.js"></script>
+          </div>
+    </div>
+    <div class="questionaire-grid-right">
+      <img class="mascott" src="./img/mascott.png" alt="" img>
+    </div>
   </div>
 </body>
 
