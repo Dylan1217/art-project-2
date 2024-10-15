@@ -34,6 +34,7 @@
 .logo-title{
     font-size: 38px;
     padding-left: 15px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .nav-header-container {
@@ -84,26 +85,29 @@
 }
 
 /* used for the home page images and text*/
-.tiger-stadium-header{
-    display: flex;
-    grid-area: header;
-    text-align: center;
-}
 
 .tiger-stadium-grid-box{
     background-color: bisque;
     display: grid;
     grid-template-areas: 
-        'header header header header header header'
-        'left left middle middle right right'
-        'footer footer footer footer footer footer';
+        'header header header'
+        'left middle right'
+        'footer footer footer';
 }
+
+.tiger-stadium-header{
+    display: flex;
+    grid-area: header;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
 
   .tStadium{
     width: 500px;
     padding: 20px;
 }  
-
+.tiger-stadium-header,
 .home-left,
 .home-mid,
 .home-right{
@@ -135,6 +139,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
 
 }
 
@@ -182,6 +188,7 @@
     padding: 20px;
     border-radius: 10px; /* rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* added shadow effect */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Right section */
@@ -197,4 +204,8 @@
 
 .mascott{
     width: 400px;
+}
+
+#displayData{
+    color:crimson;
 }
